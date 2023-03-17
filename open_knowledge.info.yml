@@ -1,0 +1,30 @@
+name: Open Knowledge
+type: profile
+description: 'Open Knowledge distribution profile.'
+core_version_requirement: ^9
+version: '0.0.1'
+project: open_knowledge
+
+# Dependencies that Open Social can not live without.
+dependencies:
+  # core
+  - drupal:breakpoint
+  - drupal:color
+  - drupal:config
+  - drupal:node
+  - drupal:user
+  - drupal:views
+  # Knowledge
+  - knowledge:knowledge
+  - knowledge:knowledge_report
+
+# Modules that are installed by default but can be uninstalled.
+install:
+  # Contrib
+  - module_filter:module_filter
+
+themes:
+  - gin
+  - socialblue
+distribution:
+  name: Open Knowledge
