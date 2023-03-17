@@ -33,7 +33,9 @@
     "drupal/admin_toolbar": "3.3.0",
     "drupal/core-composer-scaffold": "~9.4.8",
     "drupal/core-recommended": "~9.4.8",
-    "drupal/module_filter": "^4.0"
+    "drupal/knowledge": "1.x-dev@dev",
+    "drupal/module_filter": "^4.0",
+    "drupal/visitors": "^2.14"
   },
   "replace": {
       "drupal/open_knowledge": "self.version"
