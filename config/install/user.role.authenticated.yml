@@ -7,7 +7,6 @@ dependencies:
     - comment
     - contact
     - filter
-    - search
     - shortcut
     - system
 id: authenticated
@@ -20,6 +19,5 @@ permissions:
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'post comments'
-  - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
