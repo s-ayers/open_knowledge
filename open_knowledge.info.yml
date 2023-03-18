@@ -24,7 +24,7 @@ install:
   - module_filter:module_filter
 
 themes:
-  - gin
-  - socialblue
+  - olivero
+  - claro
 distribution:
   name: Open Knowledge
