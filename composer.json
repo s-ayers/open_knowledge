@@ -35,6 +35,7 @@
     "drupal/core-recommended": "~9.4.8",
     "drupal/knowledge": "1.x-dev@dev",
     "drupal/module_filter": "^4.0",
+    "drupal/search_api_page": "^1.0",
     "drupal/visitors": "^2.14"
   },
   "replace": {
