@@ -8,12 +8,39 @@ project: open_knowledge
 # Dependencies that Open Social can not live without.
 dependencies:
   # core
-  - drupal:breakpoint
-  - drupal:color
-  - drupal:config
-  - drupal:node
-  - drupal:user
-  - drupal:views
+  - node
+  - history
+  - block
+  - breakpoint
+  - ckeditor
+  - config
+  - comment
+  - contextual
+  - contact
+  - menu_link_content
+  - datetime
+  - block_content
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - big_pipe
+  - taxonomy
+  - dblog
+  - search_api:search_api
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - tour
+  - automated_cron
   # Knowledge
   - knowledge:knowledge
   - knowledge:knowledge_report
