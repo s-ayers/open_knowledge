@@ -41,6 +41,9 @@ dependencies:
   - views_ui
   - tour
   - automated_cron
+  - civicrm:civicrm
+  - civicrm:civicrm_entity
+  - civicrm:civicrmtheme
   # Knowledge
   - knowledge:knowledge
   - knowledge:knowledge_report
