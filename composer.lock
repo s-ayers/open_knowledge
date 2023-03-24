@@ -1926,6 +1926,58 @@
             }
         },
         {
+            "name": "drupal/charts",
+            "version": "5.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/charts.git",
+                "reference": "5.0.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/charts-5.0.4.zip",
+                "reference": "5.0.4",
+                "shasum": "bd12c275b2dbe56ff5ea5516db0aeba42817f92b"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "5.0.4",
+                    "datestamp": "1674072906",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "andileco",
+                    "homepage": "https://www.drupal.org/user/2054544"
+                },
+                {
+                    "name": "nikathone",
+                    "homepage": "https://www.drupal.org/user/2421800"
+                },
+                {
+                    "name": "quicksketch",
+                    "homepage": "https://www.drupal.org/user/35821"
+                }
+            ],
+            "description": "A charting API for Drupal that provides chart elements and integration with Views.",
+            "homepage": "https://www.drupal.org/project/charts",
+            "support": {
+                "source": "https://git.drupalcode.org/project/charts"
+            }
+        },
+        {
             "name": "drupal/civicrm_entity",
             "version": "3.4.0",
             "source": {
@@ -2593,13 +2645,17 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/knowledge.git",
-                "reference": "824e7a601b1cdcbea43985d38a5ad9588e48735b"
+                "reference": "a86b3777b5bb84ffc2a941e461684b6965b80d42"
             },
             "require": {
-                "drupal/autocomplete_id": "*",
-                "drupal/core": "9.x || 10.x",
+                "drupal/autocomplete_id": "^1.5",
+                "drupal/charts": "^5.0",
+                "drupal/core": "^8 || ^9 || ^10",
                 "drupal/field_group": "*",
-                "drupal/token": "*"
+                "drupal/moderation_note": "1.0-beta4",
+                "drupal/search_api": "1.28",
+                "drupal/token": "*",
+                "drupal/views_date_format_sql": "3.0-alpha2"
             },
             "require-dev": {
                 "drupal/autocomplete_id": "*"
@@ -2611,10 +2667,60 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1677282594",
+                    "datestamp": "1679608083",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Steve Ayers (bluegeek9)",
+                    "homepage": "https://www.drupal.org/u/bluegeek9",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Knowledge centered service modules.",
+            "homepage": "http://drupal.org/project/knowledge",
+            "keywords": [
+                "Drupal",
+                "Knowledge"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/knowledge",
+                "issues": "https://www.drupal.org/project/issues/knowledge"
+            }
+        },
+        {
+            "name": "drupal/moderation_note",
+            "version": "1.0.0-beta4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/moderation_note.git",
+                "reference": "8.x-1.0-beta4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/moderation_note-8.x-1.0-beta4.zip",
+                "reference": "8.x-1.0-beta4",
+                "shasum": "0884e06ccf0d94ac14099fb5012a6769c0c47d7b"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta4",
+                    "datestamp": "1670991711",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -2624,14 +2730,14 @@
             ],
             "authors": [
                 {
-                    "name": "bluegeek9",
-                    "homepage": "https://www.drupal.org/user/1286304"
+                    "name": "samuel.mortenson",
+                    "homepage": "https://www.drupal.org/user/2582268"
                 }
             ],
-            "description": "Allows users to link incidents to content.",
-            "homepage": "https://www.drupal.org/project/knowledge",
+            "description": "Provides the ability to notate elements of a moderated Entity.",
+            "homepage": "https://www.drupal.org/project/moderation_note",
             "support": {
-                "source": "https://git.drupalcode.org/project/knowledge"
+                "source": "https://git.drupalcode.org/project/moderation_note"
             }
         },
         {
@@ -2892,6 +2998,54 @@
             "homepage": "https://www.drupal.org/project/token",
             "support": {
                 "source": "https://git.drupalcode.org/project/token"
+            }
+        },
+        {
+            "name": "drupal/views_date_format_sql",
+            "version": "3.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/views_date_format_sql.git",
+                "reference": "8.x-3.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_date_format_sql-8.x-3.0-alpha2.zip",
+                "reference": "8.x-3.0-alpha2",
+                "shasum": "3b72fe62a93aaabc52e79ad66bdbfaa5caa97925"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.0-alpha2",
+                    "datestamp": "1645643791",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mradcliffe",
+                    "homepage": "https://www.drupal.org/user/157079"
+                },
+                {
+                    "name": "zany",
+                    "homepage": "https://www.drupal.org/user/284183"
+                }
+            ],
+            "description": "Allows to format date fields using SQL. This enables group aggregation.",
+            "homepage": "https://www.drupal.org/project/views_date_format_sql",
+            "support": {
+                "source": "https://git.drupalcode.org/project/views_date_format_sql"
             }
         },
         {
