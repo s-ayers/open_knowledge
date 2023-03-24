@@ -12,7 +12,7 @@ dependencies:
   - history
   - block
   - breakpoint
-  - ckeditor
+  - ckeditor5
   - config
   - comment
   - contextual
@@ -31,12 +31,11 @@ dependencies:
   - big_pipe
   - taxonomy
   - dblog
-  - search_api:search_api
+  - search_page
   - shortcut
   - toolbar
   - field_ui
   - file
-  - rdf
   - views
   - views_ui
   - tour
